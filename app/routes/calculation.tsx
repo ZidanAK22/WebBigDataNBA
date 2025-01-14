@@ -30,7 +30,7 @@ export default function CalculationPage() {
 
                 <br />
                 <br />
-                <Link to="/data.csv" className='underline text-fuchsia-500 italic'>Data.CSV</Link>
+                <Link to="https://github.com/ZidanAK22/BIgDataNBA/blob/main/filtered_season24_non_normalized_sorted.csv" className='underline text-fuchsia-500 italic'>Data.CSV</Link>
             </p>
 
             <div>
