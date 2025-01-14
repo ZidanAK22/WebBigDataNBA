@@ -1,5 +1,6 @@
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
+import { Link } from '@remix-run/react';
 
 export default function CalculationPage() {
     return (
@@ -8,6 +9,29 @@ export default function CalculationPage() {
                 <h1 className="font-bold text-5xl">Calculation</h1>
                 <p className="font-light">Here is how we calculate the "player score" that determines their cluster</p>
             </div>
+
+            <p className="mt-12">
+                Using basic NBA stats, since they are linear, we try to combine them all and configure
+                weights to better reflect their impact of a player performance indicator.
+                <br />
+                This formula is largely inspired by <Link to='https://doi.org/10.1016/j.is.2020.101562' className='underline text-fuchsia-500 italic'>This Paper</Link>, although our version is just a way way, inferior
+                imitation just to create a working prototype.
+
+                <br />
+                <br />
+
+                It is biased towards offensive stats, but the emergence of 3PTS focused offense, simply
+                made the word <span className='italic font-bold'>"Offense is the Best Defense"</span> true
+
+                <br />
+                <br />
+
+                Here is the csv of the data we preprocessed and use for the clustering
+
+                <br />
+                <br />
+                <Link to="/data.csv" className='underline text-fuchsia-500 italic'>Data.CSV</Link>
+            </p>
 
             <div>
                 <h2 className="font-bold text-3xl">Player Score Formula</h2>
@@ -58,6 +82,22 @@ export default function CalculationPage() {
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <h2 className="font-bold text-3xl">Cluster Result</h2>
+                <p className='mt-8'>
+                    Here is the cluster result. Check out this repo for the code used.
+                    Since we are defining players by 5 tier, K-Means felt the most appropriate.
+
+                    <br />
+                    <br />
+
+                    <Link to="https://github.com/ZidanAK22/BigDataNBA" className='underline text-fuchsia-500 italic'>Python Repo</Link>
+
+                    <img src='clusterhuge.png' className='mt-4 rounded'/>
+                </p>
+
             </div>
         </div>
     )

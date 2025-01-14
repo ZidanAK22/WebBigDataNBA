@@ -75,7 +75,7 @@ export default function Index() {
       </div>
 
       <div>
-        <p className="tracking-wider text-justify [word-spacing:5px]">
+        <p className="text-justify">
           The NBA has always been about who is the best.
           In the past, you can maybe clearly say that Jordan
           is the goat of the 90s. But even then, fans can only
