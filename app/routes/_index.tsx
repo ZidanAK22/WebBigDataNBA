@@ -88,7 +88,7 @@ export default function Index() {
           But the fact is that, impact and your overall image over the league is
           what matters the most for the MVP voters. Take this data with a grain of salt
           <span> ( please.. )</span>
-
+          <br />
           Except for superstars, the rest of the players are the top 5 of their tier.
           Hopefully, the best representation of the tier.
         </p>
