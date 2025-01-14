@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import Navbar from "components/navbar";
 
 import "./tailwind.css";
 
@@ -31,7 +32,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="flex items-center justify-center p-12">
+        <Navbar />
         {children}
         <ScrollRestoration />
         <Scripts />
