@@ -1,6 +1,14 @@
 import Latex from 'react-latex-next';
 import 'katex/dist/katex.min.css';
 import { Link } from '@remix-run/react';
+import { MetaFunction } from '@remix-run/node';
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Calculation" },
+    { name: "description", content: "Documentation" },
+  ];
+};
 
 export default function CalculationPage() {
     return (

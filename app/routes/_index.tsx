@@ -75,20 +75,22 @@ export default function Index() {
       </div>
 
       <div>
-        <p className="text-justify">
+        <p className="text-center">
           The NBA has always been about who is the best.
           In the past, you can maybe clearly say that Jordan
           is the goat of the 90s. But even then, fans can only
           debate so much to put caveats into everybodies achievement.
           <br />
+          <br />
           Using basic stats, regardless of advanced metrics. I clustered
           players, and was able to see how, in the regular season. Some players
           are just very very productive.
           <br />
+          <br />
           But the fact is that, impact and your overall image over the league is
           what matters the most for the MVP voters. Take this data with a grain of salt
           <span> ( please.. )</span>
-          <br />
+          <br />        
           Except for superstars, the rest of the players are the top 5 of their tier.
           Hopefully, the best representation of the tier.
         </p>
